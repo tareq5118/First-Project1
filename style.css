@@ -362,6 +362,10 @@ footer .parent-footer .link-footer li a{
     text-decoration: none;
     color: rgb(91, 88, 88);
 }
+footer .parent-footer .link-footer li a:hover{
+    text-decoration: underline hsl(30, 88%, 47%);
+    color:rgb(221 221 221 / 98%);;
+}
 .parent-footer .contact-footer ul{
     margin-top: 6px;
 }
@@ -386,6 +390,12 @@ footer .parent-footer .contact-footer ul li a{
         text-decoration: none;
         /* margin: 15px; */
         color: rgb(91, 88, 88);
+}
+footer .parent-footer .contact-footer ul li a:hover{
+        text-decoration: none;
+        /* margin: 15px; */
+        color:rgb(221 221 221 / 98%);
+        text-decoration: underline hsl(30, 88%, 47%);
 }
 footer .parent-footer .contact-footer .link-twitter{
     margin: 0px 12px;
