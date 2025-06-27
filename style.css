@@ -1,21 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing:border-box;
 }
 html{
     font-size: 20px;
-/* font-family: "Lateef", serif; */
-  font-family: "Amiri", serif;}
+font-family: "Lateef", serif;
+  }
 header{
     display: flex;
 
     justify-content: space-between;
     direction: rtl;
-    background-color:black;
+    background-color:rgb(236, 235, 235);
     padding: 5px 15px;
     position: relative;
 }
@@ -41,8 +39,10 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     /* color: hsla(0, 0%, 0%, 0.478); */
-    color: white;
+    color: rgb(18, 18, 18);
     position: relative;
+    font-size: 1.25rem;
+    font-style:bold;
 
 }
 nav ul li a::after {
@@ -55,6 +55,7 @@ bottom: 0;
 background-color: hsl(30, 88%, 47%);;
 transition: width 0.5s ease;
 } 
+
 nav ul li a:hover::after{
     width: 100%;
 }
@@ -85,8 +86,8 @@ header .toggle span{
 }
 .open-screen-small{
     width: 100%;
-    height: 100px;
-    background-color: rgb(8, 8, 8);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
     display: block;
     position: absolute;
     top: 49px;
@@ -105,7 +106,7 @@ header .toggle span{
 .open-screen-small ul li a{
     text-decoration: none;
     /* color: hsla(0, 0%, 0%, 0.478); */
-    color: white;
+    color: rgb(44, 43, 43);
     position: relative;
     
 
@@ -365,6 +366,7 @@ footer .parent-footer .link-footer li a{
 footer .parent-footer .link-footer li a:hover{
     text-decoration: underline hsl(30, 88%, 47%);
     color:rgb(221 221 221 / 98%);;
+    transition: .2s ;
 }
 .parent-footer .contact-footer ul{
     margin-top: 6px;
@@ -380,7 +382,7 @@ footer .parent-footer .link-footer li a:hover{
     display: inline-block;
     position: absolute;
     right: 1px;
-    top: 22px;
+    top: 25px;
 }
 footer .parent-footer .contact-footer ul li{
     display: inline-block;
@@ -396,6 +398,7 @@ footer .parent-footer .contact-footer ul li a:hover{
         /* margin: 15px; */
         color:rgb(221 221 221 / 98%);
         text-decoration: underline hsl(30, 88%, 47%);
+        transition: .2s ;
 }
 footer .parent-footer .contact-footer .link-twitter{
     margin: 0px 12px;
@@ -467,7 +470,41 @@ display: none;
  }
 }
 @media(max-width:512px){
+    .coutiner{
+        max-width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
 body{
-    font-size: small ;
+    font-size: 15px ;
+    ;
+}
+.ar1{
+    flex-direction: column;
+    gap: 10px;
+    
+}
+ .ar1 img{
+    width: 100%;
+    height: 100%;
+ }
+figure .cards{
+    flex-direction: column;
+    align-items: center;
+}
+figure .card-content{
+    width: 100%;
+}
+footer .parent-footer{
+    font-size: 15px;
+    flex-direction: column;
+    gap: 10px;
+    align-items:flex-start;
+}
+.line{
+    top: 10px;
+    width: 20px;
+    height: 1px;
 }
 }
+/*  */
