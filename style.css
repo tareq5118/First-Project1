@@ -170,9 +170,12 @@ section .hero-content{
     justify-content: center;
     align-items: center; */
 }
+section .hero-content h1 {
+    font-size: 2rem;
+}
 .hero-content p{
     line-height: 3;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 /* end section1-hero */
 /* Start Article  */
@@ -258,6 +261,7 @@ background-attachment: fixed;
 }
 section .hero2 h2{
    color: hsl(30, 88%, 47%);
+   font-size: 2rem;
 }
 section .hero2 button{
     cursor: pointer;
@@ -290,6 +294,7 @@ section .hero2 button{
     background-color: hsl(30, 88%, 37%);
     transform: translateY(-0.5rem);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 .btn-donate:active {
@@ -499,6 +504,9 @@ header .toggle{
     display: inline-block;
     margin: 12px 0px;
 }
+.header.logo{
+    align-self: auto;
+}
 .ar1 .line{
     top: 1em;
 }
@@ -587,6 +595,8 @@ footer .parent-footer{
 }
 header .logo{
     padding: 0 10px;
+    align-self: auto;
+    margin: 3px 0px;
 }
 }
 .hero-content h1{

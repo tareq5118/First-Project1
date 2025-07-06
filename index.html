@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>فلسطين</title>
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <script>
+     AOS.init();
     document.addEventListener('DOMContentLoaded', function() {
     // Get the toggle button and the nav menu
     const toggleButton = document.querySelector('.toggle');
@@ -33,7 +37,7 @@
         
     });
     if(nav_head.style.display==='block'){
-        navMenu.style.display='none';
+        // navMenu.style.display='none';
         header_nav.style.height='3rem';
 
     }
@@ -70,7 +74,7 @@ if(window.innerWidth>=992){
     </header>
     <section class="hero">
 
-        <div class="hero-content">
+        <div class="hero-content" >
             <div class="coutiner">
             
             <h1>في القدس ..حيث تبدأ الحكاية </h1>
