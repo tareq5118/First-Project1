@@ -6,6 +6,42 @@
     <title>فلسطين</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get the toggle button and the nav menu
+    const toggleButton = document.querySelector('.toggle');
+    const navMenu = document.querySelector('.open-screen-small');
+    const header_nav=document.querySelector('header');
+    const nav_head=document.querySelector(' header nav');
+
+    
+    // Add click event listener to the toggle button
+    toggleButton.addEventListener('click', function() {
+        // Toggle the display of the nav menu
+        if (navMenu.style.display === 'block' ) {
+            navMenu.style.display = 'none';
+            // navMenu.style.height='0px';
+        
+
+            header_nav.style.height='3rem';
+        } else {
+            navMenu.style.display = 'block';
+            header_nav.style.height='10.25rem';
+
+        }
+        
+        
+    });
+    if(nav_head.style.display==='block'){
+        navMenu.style.display='none';
+        header_nav.style.height='3rem';
+
+    }
+});
+if(window.innerWidth>=992){
+    navMenu.style.display='none';
+}
+</script>
 <body>
     <header>
 <div class="logo">فلسطين</div>
@@ -33,9 +69,13 @@
 
     </header>
     <section class="hero">
+
         <div class="hero-content">
+            <div class="coutiner">
+            
             <h1>في القدس ..حيث تبدأ الحكاية </h1>
             <p> “في القُدْسِ، رَغْمَ تتابعِ النَّكَباتِ، ريحُ براءةٍ في الجوِّ، ريحُ طُفُولَةٍ، فَتَرى الحمامَ يَطِيرُ يُعلِنُ دَوْلَةً في الريحِ بَيْنَ رَصَاصَتَيْنْ”</p>
+        </div>
         </div>
     </section>
     <div class="coutiner">
@@ -49,7 +89,7 @@
 
 تبلغ مساحته قرابة 144000 متر مربع، ويشمل قبة الصخرة والمسجد القِبْلي والمصلى المرواني ومصلى باب الرحمة، وعدة معالم أخرى يصل عددها إلى 200 معلمًا. ويقع المسجد الأقصى فوق هضبة صغيرة تُسمى «هضبة موريا»، وتعد الصخرة أعلى نقطة فيه، وتقع في قلبه.
 
-ذُكر المسجد الأقصى في القرآن: ﴿سُبْحَانَ الَّذِي أَسْرَى بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ﴾</p>
+ذُكر المسجد الأقصى في القرآن: ﴿سُبْحَانَ الَّذِي أَسْرَى بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ</p>
             <!-- <p> قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض المسجد الاقصى - قلب القدس النابض </p> -->
         </div>
         

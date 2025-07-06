@@ -238,7 +238,7 @@ section .hero2{
     background-image: url(./imges/b6a31c91a309aa9a19f9232879c44742.jpg);
     background-size: cover;
     padding: 11rem 1.5rem;
-
+background-attachment: fixed;
     background-position: center;    
     /* animation: translatpg 1s linear;
     animation-iteration-count: infinite; */
@@ -322,12 +322,14 @@ figure .cards{
     margin: 20px 20px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
+
 }
 figure .card-content{
     /* height: 200px; */
     height: 100%;
     /* width: 150px; */
-    width: 20%;
+    min-width: 20%;
     border: 5px solid rgba(255, 255, 255, 0.577);
     border-radius: 10px;
 }
@@ -415,6 +417,7 @@ footer .parent-footer .link-footer li a:hover{
     color:rgb(221 221 221 / 98%);;
     transition: .2s ;
 }
+
 .parent-footer .contact-footer ul{
     margin-top: 6px;
 }
@@ -430,6 +433,11 @@ footer .parent-footer .link-footer li a:hover{
     position: absolute;
     right: 1px;
     top: 1.75rem;
+}
+@media(max-width:786px){
+   .contact-footer .line-footer , .link-footer .line-footer{
+    top: 1.25rem;
+   } 
 }
 footer .parent-footer .contact-footer ul li{
     display: inline-block;
@@ -481,12 +489,16 @@ color: white;
         margin: 0;
     }
     header {
-        height: 10rem;
+        height: 3rem;
+        /* height: 10rem; */
     }
     
 header .toggle{
     display: inline-block;
     margin: 12px 0px;
+}
+.ar1 .line{
+    top: 1em;
 }
 header nav ul{
     display: none;
@@ -495,8 +507,14 @@ header nav ul{
     display: none;
 }
 header .open-screen-small{
-    display: block;
+    display:none;
 }
+figure .cards{
+    flex-shrink: 0;
+}
+ .contact-footer .line-footer , .link-footer .line-footer{
+    top: 1.75em;
+   } 
 /* header .open-screen-small ul li{
     display: block;
 } */
@@ -520,6 +538,7 @@ display: none;
         letter-spacing: 0.5px;
 
  }
+
 }
 @media(max-width:512px){
     .coutiner{
@@ -527,10 +546,15 @@ display: none;
         padding: 0 10px;
         margin: 0 auto;
     }
+    
 body{
     font-size: 15px ;
     ;
 }
+/* header .logo{
+    padding: 0;
+} */
+
 .ar1{
     flex-direction: column;
     gap: 10px;
@@ -553,14 +577,14 @@ footer .parent-footer{
     gap: 10px;
     align-items:flex-start;
 }
-.line{
-    top: 10px;
+.ar1 .line{
+    top: 1em;
     width: 20px;
     height: 1px;
 }
 }
 .hero-content h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .hero-content p{
 line-height: 1.75;
@@ -568,4 +592,3 @@ line-height: 1.75;
 .hero2 p{
 line-height: 1.5;
 }
-/*  */
